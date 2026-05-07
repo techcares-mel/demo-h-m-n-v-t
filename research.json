@@ -1,0 +1,87 @@
+{
+  "name": "HẺM ĂN VẶT",
+  "type": "Vietnamese street food / snack restaurant",
+  "tagline": "",
+  "description": "HẺM ĂN VẶT (meaning 'Snack Alley') is a Vietnamese street food and snack restaurant located in Sunshine North, Melbourne. The restaurant brings the vibrant flavours of Vietnamese street food culture to the local community, serving a range of traditional Vietnamese snacks, casual dishes, and authentic street food favourites inspired by the laneways of Vietnam.",
+  "address": "67 Berkshire Rd, Sunshine North VIC 3020, Australia",
+  "phone": "",
+  "email": "",
+  "hours": "",
+  "services": [
+    "Vietnamese street food",
+    "Vietnamese snacks (đồ ăn vặt)",
+    "Bánh mì (Vietnamese bread rolls)",
+    "Bánh tráng trộn (rice paper salad)",
+    "Chè (Vietnamese sweet dessert drinks)",
+    "Vietnamese beverages and drinks",
+    "Takeaway"
+  ],
+  "logo_url": "",
+  "logo_note": "No logo found online. The business has very limited web presence and no logo image was discoverable via Google, Facebook, Instagram, or their Uber Eats listing.",
+  "image_urls": [
+    "https://upload.wikimedia.org/wikipedia/commons/1/1f/Banh_mi_sandwich.jpg",
+    "https://upload.wikimedia.org/wikipedia/commons/c/c5/2023-12-10_Coffee_and_b%C3%A1nh_m%C3%AC_in_Saigon.jpg",
+    "https://upload.wikimedia.org/wikipedia/commons/f/fd/B%C3%A1nh_tr%C3%A1ng_n%C6%B0%E1%BB%9Bng_TP._H%E1%BB%93_Ch%C3%AD_Minh_-_street_food_in_Ho_Chi_Minh_City%2C_Vietnam.jpg",
+    "https://upload.wikimedia.org/wikipedia/commons/d/df/Banana%2C_tapioca%2C_coconut_creme_Vietnamese_pudding_%28che_chuoi%29.jpg",
+    "https://upload.wikimedia.org/wikipedia/commons/7/7e/Hanoi_Vietnam_Street-vendors-in-Hanoi-03.jpg"
+  ],
+  "image_url_list": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Banh_mi_sandwich.jpg",
+      "context": "food",
+      "description": "Bánh mì sandwich — Vietnamese bread roll with fillings",
+      "source": "wikimedia"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c5/2023-12-10_Coffee_and_b%C3%A1nh_m%C3%AC_in_Saigon.jpg",
+      "context": "food",
+      "description": "Coffee and bánh mì in Saigon, Vietnam — authentic street food setting",
+      "source": "wikimedia"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/fd/B%C3%A1nh_tr%C3%A1ng_n%C6%B0%E1%BB%9Bng_TP._H%E1%BB%93_Ch%C3%AD_Minh_-_street_food_in_Ho_Chi_Minh_City%2C_Vietnam.jpg",
+      "context": "exterior",
+      "description": "Bánh tráng nướng street food stall in Ho Chi Minh City — Vietnamese street food scene",
+      "source": "wikimedia"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/df/Banana%2C_tapioca%2C_coconut_creme_Vietnamese_pudding_%28che_chuoi%29.jpg",
+      "context": "food",
+      "description": "Chè chuối — Vietnamese banana tapioca coconut pudding dessert",
+      "source": "wikimedia"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Hanoi_Vietnam_Street-vendors-in-Hanoi-03.jpg",
+      "context": "exterior",
+      "description": "Vietnamese street food vendor with food stall in Hanoi — authentic alley dining atmosphere",
+      "source": "wikimedia"
+    }
+  ],
+  "social_links": {
+    "facebook": "",
+    "instagram": "",
+    "linkedin": "",
+    "tiktok": ""
+  },
+  "existing_website_url": "",
+  "brand_colors": [],
+  "testimonials": [],
+  "_research_notes": {
+    "sources_checked": [
+      "Uber Eats (confirmed listing: https://www.ubereats.com/au/store/hem-an-vat-67-berkshire-rd-sunshine-north-vic-3020/HHP_YnhWSKOK5M04rqCb3A — inactive as of April 2026)",
+      "Google Search",
+      "Instagram popular search",
+      "Facebook search",
+      "TripAdvisor",
+      "Yelp",
+      "AGFG",
+      "RestaurantGuru",
+      "MenuLog",
+      "DoorDash",
+      "Local Business Guide"
+    ],
+    "confirmed_address": "67 Berkshire Rd, Sunshine North VIC 3020 — confirmed via Uber Eats listing",
+    "platform_status": "Uber Eats listing shows 'Closed on Uber Eats as of 5 Apr 2026'. Restaurant may still operate as dine-in or direct takeaway.",
+    "note": "Business has extremely limited online presence. No phone, email, social media, logo, or photo assets were discoverable across any platform searched. The address at 67 Berkshire Rd is a food court/commercial strip that also hosts VIDESHI (Indian), Coal Workshop (burgers), La Morenita Latin Cuisine, and Sunshine Kebab Curry among others."
+  }
+}

@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HẺM ĂN VẶT — Authentic Vietnamese Street Food · Sunshine North</title>
+  <meta name="description" content="HẺM ĂN VẶT brings the vibrant flavours of Vietnam's street alleys to Sunshine North. Bánh mì, chè, bánh tráng nướng and more — all made with heart at 67 Berkshire Rd, Sunshine North VIC 3020." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;1,400&family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600;1,700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Scroll Progress Bar -->
+  <div id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- DEMO Watermark -->
+  <div class="demo-watermark" aria-hidden="true">DEMO</div>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" aria-label="Back to top" title="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- ===================== NAV ===================== -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo" aria-label="HẺM ĂN VẶT — Go to top">
+        <span class="logo-lantern">🏮</span>
+        <span class="logo-text">HẺM ĂN VẶT</span>
+      </a>
+
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" role="list">
+        <li><a href="#menu" class="nav-link">Menu</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Mobile Overlay Menu -->
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true" role="dialog" aria-label="Navigation menu">
+      <button class="mobile-close" id="mobile-close" aria-label="Close menu">
+        <i class="fas fa-times"></i>
+      </button>
+      <ul role="list">
+        <li><a href="#menu" class="mobile-link">Menu</a></li>
+        <li><a href="#about" class="mobile-link">About</a></li>
+        <li><a href="#gallery" class="mobile-link">Gallery</a></li>
+        <li><a href="#contact" class="mobile-link">Contact</a></li>
+      </ul>
+      <p class="mobile-tagline">Authentic Vietnamese Street Food</p>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <section id="hero" class="hero">
+    <div class="hero-bg" style="background-image: url('images/image3.jpg');"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal">🏮 &nbsp; Sunshine North, Melbourne</p>
+      <h1 class="hero-title reveal d1">HẺM ĂN VẶT</h1>
+      <p class="hero-subtitle reveal d2">Authentic Vietnamese Street Food · Sunshine North</p>
+      <p class="hero-desc reveal d3">From the laneways of Hanoi and Saigon, straight to your hands.</p>
+      <div class="hero-cta reveal d4">
+        <a href="#menu" class="btn btn-primary">View Our Menu</a>
+        <a href="#contact" class="btn btn-outline">Find Us</a>
+      </div>
+    </div>
+    <div class="hero-divider" aria-hidden="true">
+      <svg viewBox="0 0 1440 60" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <path d="M0,30 C240,60 480,0 720,30 C960,60 1200,0 1440,30 L1440,60 L0,60 Z" fill="#0d0a07"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section id="about" class="about section-pad">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text">
+          <span class="section-label reveal">Our Story</span>
+          <h2 class="section-heading reveal d1">A Little Alley,<br /><em>A World of Flavour</em></h2>
+          <p class="about-lead reveal d2">
+            We bring the flavours of Vietnam's beloved street alleys to Sunshine North. From crispy bánh mì to refreshing chè, every dish is made with heart.
+          </p>
+          <p class="about-body reveal d3">
+            HẺM ĂN VẶT — meaning "Snack Alley" — is inspired by the vibrant laneways of Hanoi and Hồ Chí Minh City, where locals gather after dark over steaming bowls, grilled skewers, and sweet cold drinks. We've brought those same recipes, that same warmth, to the heart of Sunshine North's food community at Berkshire Road.
+          </p>
+          <div class="about-badges reveal d4">
+            <span class="badge">🌿 Fresh Daily</span>
+            <span class="badge">🛵 Takeaway</span>
+            <span class="badge">❤️ Family Run</span>
+          </div>
+        </div>
+        <div class="about-image reveal d2">
+          <img src="images/image2.jpg" alt="Coffee and bánh mì in Saigon — authentic Vietnamese street food" loading="lazy" />
+          <div class="about-image-caption">Cà phê &amp; bánh mì — the soul of Vietnamese mornings</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== MENU ===================== -->
+  <section id="menu" class="menu section-pad">
+    <div class="container">
+      <span class="section-label reveal" style="text-align:center; display:block;">Thực Đơn</span>
+      <h2 class="section-heading centered reveal d1">OUR MENU</h2>
+      <p class="section-subheading centered reveal d2">Handmade with traditional recipes — the taste of Vietnam's streets</p>
+
+      <div class="menu-grid">
+
+        <!-- Bánh Mì -->
+        <div class="menu-card reveal d1">
+          <div class="menu-card-icon">🥖</div>
+          <h3 class="menu-card-title">Bánh Mì</h3>
+          <p class="menu-card-desc">Vietnamese baguette sandwiches, fresh baked and loaded with flavour</p>
+          <ul class="menu-items">
+            <li>
+              <span class="item-name">Classic Pork <span class="item-viet">(Bánh Mì Thịt)</span></span>
+              <span class="item-dot"></span>
+            </li>
+            <li>
+              <span class="item-name">Grilled Chicken <span class="item-viet">(Bánh Mì Gà)</span></span>
+              <span class="item-dot"></span>
+            </li>
+            <li>
+              <span class="item-name">Tofu &amp; Lemongrass <span class="item-viet">(Bánh Mì Chay)</span></span>
+              <span class="item-dot"></span>
+            </li>
+            <li>
+              <span class="item-name">Pâté &amp; Butter <span class="item-viet">(Bánh Mì Pâté)</span></span>
+              <span class="item-dot"></span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Chè -->
+        <div class="menu-card reveal d2">
+          <div class="menu-card-icon">🍮</div>
+          <h3 class="menu-card-title">Chè</h3>
+          <p class="menu-card-desc">Vietnamese sweet soups and desserts — cooling, comforting, delicious</p>
+          <ul class="menu-items">
+            <li>
+              <span class="item-name">Banana Coconut Pudding <span class="item-viet">(Chè Chuối)</span></span>
+              <span class="item-dot"></span>
+            </li>
+            <li>
+              <span class="item-name">Three-Colour Dessert <span class="item-viet">(Chè Ba Màu)</span></span>
+              <span class="item-dot"></span>
+            </li>
+            <li>
+              <span class="item-name">Mung Bean Sweet Soup <span class="item-viet">(Chè Đậu Xanh)</span></span>
+              <span class="item-dot"></span>
+            </li>
+            <li>
+              <span class="item-name">Taro &amp; Coconut <span class="item-viet">(Chè Khoai Môn)</span></span>
+              <span class="item-dot"></span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Street Snacks -->
+        <div class="menu-card reveal d3">
+          <div class="menu-card-icon">🌮</div>
+          <h3 class="menu-card-title">Đồ Ăn Vặt</h3>
+          <p class="menu-card-desc">Classic Vietnamese street snacks — the spirit of the alley</p>
+          <ul class="menu-items">
+            <li>
+              <span class="item-name">Grilled Rice Paper <span class="item-viet">(Bánh Tráng Nướng)</span></span>
+              <span class="item-dot"></span>
+            </li>
+            <li>
+              <span class="item-name">Fresh Spring Rolls <span class="item-viet">(Gỏi Cuốn)</span></span>
+              <span class="item-dot"></span>
+            </li>
+            <li>
+              <span class="item-name">Sizzling Vietnamese Crepe <span class="item-viet">(Bánh Xèo)</span></span>
+              <span class="item-dot"></span>
+            </li>
+            <li>
+              <span class="item-name">Rice Paper Salad <span class="item-viet">(Bánh Tráng Trộn)</span></span>
+              <span class="item-dot"></span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Drinks -->
+        <div class="menu-card reveal d4">
+          <div class="menu-card-icon">🧋</div>
+          <h3 class="menu-card-title">Đồ Uống</h3>
+          <p class="menu-card-desc">Refreshing Vietnamese drinks — from street-style coffee to fresh juices</p>
+          <ul class="menu-items">
+            <li>
+              <span class="item-name">Iced Coffee <span class="item-viet">(Cà Phê Sữa Đá)</span></span>
+              <span class="item-dot"></span>
+            </li>
+            <li>
+              <span class="item-name">Fresh Sugarcane Juice <span class="item-viet">(Nước Mía)</span></span>
+              <span class="item-dot"></span>
+            </li>
+            <li>
+              <span class="item-name">Iced Lemon Soda <span class="item-viet">(Soda Chanh)</span></span>
+              <span class="item-dot"></span>
+            </li>
+            <li>
+              <span class="item-name">Vietnamese Iced Tea <span class="item-viet">(Trà Đá)</span></span>
+              <span class="item-dot"></span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <p class="menu-note reveal">
+        <i class="fas fa-info-circle"></i>
+        &nbsp;Menu items subject to daily availability. Ask about today's specials when you visit.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===================== GALLERY ===================== -->
+  <section id="gallery" class="gallery section-pad">
+    <div class="container">
+      <span class="section-label reveal" style="text-align:center; display:block;">Hình Ảnh</span>
+      <h2 class="section-heading centered reveal d1">GALLERY</h2>
+      <p class="section-subheading centered reveal d2">A taste of Vietnam, right here in Melbourne's west</p>
+
+      <div class="gallery-grid">
+
+        <figure class="gallery-item reveal d1">
+          <div class="gallery-img-wrap">
+            <img src="images/image1.jpg" alt="Bánh mì sandwich — Vietnamese bread roll with fillings" loading="lazy" />
+            <div class="gallery-overlay">
+              <p>Bánh Mì</p>
+              <small>Vietnam's iconic street sandwich</small>
+            </div>
+          </div>
+          <figcaption>Bánh Mì — crispy baguette with fresh fillings</figcaption>
+        </figure>
+
+        <figure class="gallery-item reveal d2">
+          <div class="gallery-img-wrap">
+            <img src="images/image2.jpg" alt="Coffee and bánh mì in Saigon — authentic Vietnamese street food setting" loading="lazy" />
+            <div class="gallery-overlay">
+              <p>Cà Phê &amp; Bánh Mì</p>
+              <small>The Saigon breakfast ritual</small>
+            </div>
+          </div>
+          <figcaption>Cà Phê Sữa Đá &amp; Bánh Mì — the soul of Vietnamese mornings</figcaption>
+        </figure>
+
+        <figure class="gallery-item reveal d3">
+          <div class="gallery-img-wrap">
+            <img src="images/image3.jpg" alt="Bánh tráng nướng street food stall in Ho Chi Minh City" loading="lazy" />
+            <div class="gallery-overlay">
+              <p>Bánh Tráng Nướng</p>
+              <small>Grilled rice paper — street favourite</small>
+            </div>
+          </div>
+          <figcaption>Bánh Tráng Nướng — Saigon's beloved grilled street snack</figcaption>
+        </figure>
+
+        <figure class="gallery-item reveal d4">
+          <div class="gallery-img-wrap">
+            <img src="images/image4.jpg" alt="Chè chuối — Vietnamese banana tapioca coconut pudding dessert" loading="lazy" />
+            <div class="gallery-overlay">
+              <p>Chè Chuối</p>
+              <small>Banana &amp; coconut sweet dessert</small>
+            </div>
+          </div>
+          <figcaption>Chè Chuối — banana tapioca in coconut cream</figcaption>
+        </figure>
+
+        <figure class="gallery-item reveal d1">
+          <div class="gallery-img-wrap">
+            <img src="images/image5.jpg" alt="Vietnamese street food vendor in Hanoi alley — authentic alley dining" loading="lazy" />
+            <div class="gallery-overlay">
+              <p>Hẻm Hà Nội</p>
+              <small>The laneways that inspired us</small>
+            </div>
+          </div>
+          <figcaption>A Hanoi street food alley — the spirit behind HẺM ĂN VẶT</figcaption>
+        </figure>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== WHY US ===================== -->
+  <section class="why-us section-pad">
+    <div class="container">
+      <span class="section-label reveal" style="text-align:center; display:block;">Tại Sao Chọn Chúng Tôi</span>
+      <h2 class="section-heading centered reveal d1">WHY HẺM ĂN VẶT?</h2>
+
+      <div class="features-grid">
+        <div class="feature-card reveal d1">
+          <div class="feature-icon">🏮</div>
+          <h3>Authentic Recipes</h3>
+          <p>Traditional family recipes passed down through generations, unchanged and uncompromised.</p>
+        </div>
+        <div class="feature-card reveal d2">
+          <div class="feature-icon">🌿</div>
+          <h3>Fresh Ingredients Daily</h3>
+          <p>We source fresh herbs, vegetables and produce every day — because flavour starts with quality.</p>
+        </div>
+        <div class="feature-card reveal d3">
+          <div class="feature-icon">🛵</div>
+          <h3>Takeaway Friendly</h3>
+          <p>Everything on our menu is packed for easy takeaway. Grab and go — Vietnamese alley style.</p>
+        </div>
+        <div class="feature-card reveal d4">
+          <div class="feature-icon">❤️</div>
+          <h3>Family Run</h3>
+          <p>A small family business, made with love for the Sunshine North community since day one.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section id="contact" class="contact section-pad">
+    <div class="container">
+      <span class="section-label reveal" style="text-align:center; display:block;">Liên Hệ</span>
+      <h2 class="section-heading centered reveal d1">FIND US</h2>
+      <p class="section-subheading centered reveal d2">Come visit us at Berkshire Road, Sunshine North</p>
+
+      <div class="contact-grid">
+
+        <!-- Contact Info -->
+        <div class="contact-info reveal d1">
+          <div class="contact-detail">
+            <i class="fas fa-map-marker-alt contact-icon"></i>
+            <div>
+              <strong>Address</strong>
+              <p>67 Berkshire Rd<br />Sunshine North VIC 3020<br />Australia</p>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <i class="fas fa-utensils contact-icon"></i>
+            <div>
+              <strong>Today's Specials</strong>
+              <p>📞 Call in to ask about today's specials — our menu changes with the freshest ingredients available.</p>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <i class="fas fa-store contact-icon"></i>
+            <div>
+              <strong>Location</strong>
+              <p>Located in the Berkshire Rd food strip alongside a vibrant selection of multicultural eateries in Sunshine North.</p>
+            </div>
+          </div>
+
+          <!-- Map Embed -->
+          <div class="map-wrap reveal d2">
+            <iframe
+              src="https://maps.google.com/maps?q=67+Berkshire+Rd,+Sunshine+North+VIC+3020&output=embed"
+              title="HẺM ĂN VẶT location map"
+              loading="lazy"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-wrap reveal d2">
+          <h3>Send Us a Message</h3>
+          <form id="contact-form" class="contact-form" novalidate>
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="Nguyễn Văn A" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="your.email@gmail.com" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Ask about our menu, opening hours, or anything else..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <i class="fas fa-paper-plane"></i> &nbsp;Send Message
+            </button>
+          </form>
+          <div id="thank-you" class="thank-you" aria-live="polite" hidden>
+            <div class="thank-you-inner">
+              <span class="thank-you-icon">🏮</span>
+              <h3>Cảm ơn bạn!</h3>
+              <p>Thank you for your message. We'll get back to you soon. Come visit us at Berkshire Rd!</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="footer-inner container">
+      <div class="footer-brand">
+        <span class="footer-logo">
+          <span class="logo-lantern">🏮</span>
+          <span class="logo-text">HẺM ĂN VẶT</span>
+        </span>
+        <p class="footer-tagline">Authentic Vietnamese Street Food</p>
+        <p class="footer-address">67 Berkshire Rd, Sunshine North VIC 3020</p>
+      </div>
+
+      <div class="footer-nav">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#menu">Our Menu</a></li>
+          <li><a href="#about">Our Story</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact &amp; Location</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-note">
+        <h4>Serving</h4>
+        <ul>
+          <li>Bánh Mì &amp; Bánh Tráng</li>
+          <li>Chè &amp; Sweet Desserts</li>
+          <li>Đồ Ăn Vặt — Street Snacks</li>
+          <li>Vietnamese Drinks</li>
+          <li>Takeaway Available</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 HẺM ĂN VẶT. All rights reserved. &nbsp;·&nbsp; Sunshine North, Melbourne</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

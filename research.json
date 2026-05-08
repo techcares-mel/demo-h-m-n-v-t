@@ -18,45 +18,8 @@
   ],
   "logo_url": "",
   "logo_note": "No logo found online. The business has very limited web presence and no logo image was discoverable via Google, Facebook, Instagram, or their Uber Eats listing.",
-  "image_urls": [
-    "https://upload.wikimedia.org/wikipedia/commons/1/1f/Banh_mi_sandwich.jpg",
-    "https://upload.wikimedia.org/wikipedia/commons/c/c5/2023-12-10_Coffee_and_b%C3%A1nh_m%C3%AC_in_Saigon.jpg",
-    "https://upload.wikimedia.org/wikipedia/commons/f/fd/B%C3%A1nh_tr%C3%A1ng_n%C6%B0%E1%BB%9Bng_TP._H%E1%BB%93_Ch%C3%AD_Minh_-_street_food_in_Ho_Chi_Minh_City%2C_Vietnam.jpg",
-    "https://upload.wikimedia.org/wikipedia/commons/d/df/Banana%2C_tapioca%2C_coconut_creme_Vietnamese_pudding_%28che_chuoi%29.jpg",
-    "https://upload.wikimedia.org/wikipedia/commons/7/7e/Hanoi_Vietnam_Street-vendors-in-Hanoi-03.jpg"
-  ],
-  "image_url_list": [
-    {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Banh_mi_sandwich.jpg",
-      "context": "food",
-      "description": "Bánh mì sandwich — Vietnamese bread roll with fillings",
-      "source": "wikimedia"
-    },
-    {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c5/2023-12-10_Coffee_and_b%C3%A1nh_m%C3%AC_in_Saigon.jpg",
-      "context": "food",
-      "description": "Coffee and bánh mì in Saigon, Vietnam — authentic street food setting",
-      "source": "wikimedia"
-    },
-    {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/f/fd/B%C3%A1nh_tr%C3%A1ng_n%C6%B0%E1%BB%9Bng_TP._H%E1%BB%93_Ch%C3%AD_Minh_-_street_food_in_Ho_Chi_Minh_City%2C_Vietnam.jpg",
-      "context": "exterior",
-      "description": "Bánh tráng nướng street food stall in Ho Chi Minh City — Vietnamese street food scene",
-      "source": "wikimedia"
-    },
-    {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/d/df/Banana%2C_tapioca%2C_coconut_creme_Vietnamese_pudding_%28che_chuoi%29.jpg",
-      "context": "food",
-      "description": "Chè chuối — Vietnamese banana tapioca coconut pudding dessert",
-      "source": "wikimedia"
-    },
-    {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Hanoi_Vietnam_Street-vendors-in-Hanoi-03.jpg",
-      "context": "exterior",
-      "description": "Vietnamese street food vendor with food stall in Hanoi — authentic alley dining atmosphere",
-      "source": "wikimedia"
-    }
-  ],
+  "image_urls": [],
+  "image_url_list": [],
   "social_links": {
     "facebook": "",
     "instagram": "",
@@ -78,10 +41,12 @@
       "RestaurantGuru",
       "MenuLog",
       "DoorDash",
-      "Local Business Guide"
+      "Local Business Guide",
+      "Google Maps (could not access structured data)"
     ],
     "confirmed_address": "67 Berkshire Rd, Sunshine North VIC 3020 — confirmed via Uber Eats listing",
     "platform_status": "Uber Eats listing shows 'Closed on Uber Eats as of 5 Apr 2026'. Restaurant may still operate as dine-in or direct takeaway.",
-    "note": "Business has extremely limited online presence. No phone, email, social media, logo, or photo assets were discoverable across any platform searched. The address at 67 Berkshire Rd is a food court/commercial strip that also hosts VIDESHI (Indian), Coal Workshop (burgers), La Morenita Latin Cuisine, and Sunshine Kebab Curry among others."
+    "image_search_note": "No real photos of this specific business were found on any platform (Google Maps, Facebook, Instagram, website). Wikipedia/Wikimedia images have been intentionally excluded per research rules — only real business photos are permitted. image_urls and image_url_list are empty; the design agent should use a CSS gradient fallback.",
+    "note": "Business has extremely limited online presence. No phone, email, social media, logo, or photo assets were discoverable across any platform searched. The address at 67 Berkshire Rd is a food court/commercial strip that also hosts VIDESHI (Indian), Coal Workshop (burgers), La Morenita Latin Cuisine, and Sunshine Kebab Curry among others. No dedicated Facebook, Instagram, TikTok, or website was found for the Sunshine North location specifically."
   }
 }

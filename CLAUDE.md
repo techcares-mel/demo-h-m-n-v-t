@@ -4,63 +4,70 @@
 - **Name**: HẺM ĂN VẶT (means "Snack Alley" in Vietnamese)
 - **Type**: Vietnamese street food / snack restaurant
 - **Address**: 67 Berkshire Rd, Sunshine North VIC 3020, Australia
-- **Phone**: Not found — no phone number discoverable
+- **Phone**: Not found
 - **Email**: Not found
 - **Website**: No existing website
-- **Delivery**: Uber Eats listing found (inactive as of April 2026); direct takeaway available
+- **Delivery**: Also available on Uber Eats (listing inactive as of April 2026); direct takeaway available
+
+## Language
+- **ALL site text is in English only.** The brand name "HẺM ĂN VẶT" is retained as a proper noun. Dish names (Bánh Mì, Chè, Bánh Tráng Trộn, etc.) are used as widely-recognised Vietnamese food terms (like "sushi" or "tacos") with English descriptions alongside them.
 
 ## Design System
 - **Theme**: Dark — very dark warm black background, warm cream text, lantern-lit alley aesthetic
-- **Primary / Accent color**: `#c8392b` (deep Vietnamese red)
-- **Accent hover**: `#a82e22`
-- **Accent glow**: `rgba(200, 57, 43, 0.35)`
-- **Gold accent**: `#d4a847` — italic display headings, eyebrow text, quote card
-- **Background**: `#0d0a07` (very dark warm black)
-- **Surface**: `#1a1208` (dark warm brown — About, Stats, Footer sections)
+- **Accent color**: `#d8882c` (warm amber — from colors.json)
+- **Accent hover**: `#de9a4c`
+- **Accent glow**: `rgba(216, 136, 44, 0.25)`
+- **Gold accent**: `#e0d69e` (from colors.json lightVibrant)
+- **Background**: `#0d0a07` (very dark warm black — custom, warmer than colors.json)
+- **Surface**: `#1a1208` (dark warm brown — About, Gallery, Contact, Footer sections)
 - **Card**: `#221a0e` (menu cards, contact form)
 - **Text**: `#f5e6d0` (warm cream)
 - **Text muted**: `#9c8a72` (warm tan)
-- **Heading font**: `Cormorant Garamond` — 700, italic for display headings and section titles
-- **Body font**: `Be Vietnam Pro` — 400/500/600/700 — correct rendering of Vietnamese diacritics
-- **Inspiration**: Late-night hẻm dining atmosphere — warm reds, dark moody backgrounds, lantern light, inspired by the street food alleys of Hanoi and Saigon. No photos available; visual interest achieved through CSS gradients, animated lanterns, decorative quote card, and diamond pattern SVG.
+- **Border**: `rgba(216, 136, 44, 0.2)` (amber-tinted)
+- **Heading font**: `Cormorant Garamond` (700, italic for display headings)
+- **Body font**: `Be Vietnam Pro` (400/500/600/700)
+- **Inspiration**: Late-night hẻm dining atmosphere — warm amber and gold accents, dark moody backgrounds, real business photos from Google Maps, inspired by Vietnamese street food alleyways.
 
 ## Assets
-- **Logo**: No logo found — business name "HẺM ĂN VẶT" styled in Cormorant Garamond italic with 🏮 lantern emoji in nav and footer
-- **images/**: EMPTY — no business photos found online. No `<img>` tags or `background-image: url(images/...)` references exist in the codebase.
-- **colors.json**: Not generated (no logo to extract from)
-- **Hero background**: CSS radial-gradient (`#3d1a0a → #1a0a05 → #0d0a07`) with repeating diagonal-line texture overlay
-- **About visual**: Decorative quote card with Vietnamese quote, gold typography, diamond SVG pattern — no image
+- **Logo**: `logo.png` — present in business root. Displayed in nav (height: 50px) and footer (height: 60px).
+- **images/**: 5 real business photos from Google Maps.
+  - `image1.webp` — Vietnamese street food menu item (used as hero background)
+  - `image2.webp` — Vietnamese food menu item (used in gallery)
+  - `image3.webp` — Business photo (used as About section image)
+  - `image4.webp` — Business photo (used in gallery)
+  - `image5.webp` — Business photo (used in gallery, spans full width)
+- **colors.json**: Present — accent `#d8882c` (amber), suggestedTheme: dark
+- **Hero background**: `images/image1.webp` with `rgba(0,0,0,0.58)` overlay
 
 ## Page Sections
-1. **Nav** — Fixed top, transparent → blur + rgba(13,10,7,0.9) dark on scroll (scrollY > 50). Logo: 🏮 HẺM ĂN VẶT in Cormorant Garamond italic red. Links: Thực Đơn, Về Chúng Tôi, Liên Hệ. Mobile: hamburger → full-screen overlay with large italic Vietnamese links + English subtitles.
-2. **Hero** — 100vh. CSS gradient background (no image). H1: HẺM / ĂN VẶT (two-line, ĂN VẶT italic red). Subtitle: Đồ Ăn Vặt Đường Phố · Vietnamese Street Food. Two CTAs: "Xem Thực Đơn" + "Tìm Chúng Tôi". Floating 🏮 lantern emojis with float animation. SVG wave divider at bottom.
-3. **About (Về Chúng Tôi)** — Dark warm surface. Two-column: left text (story from research.json, 4 feature badges), right decorative quote card ("Hẻm nhỏ, hương vị lớn" in Cormorant Garamond, gold, diamond SVG pattern background).
-4. **Menu (Thực Đơn)** — 2×2 card grid on bg. Categories: Bánh Mì (4 items), Chè (4 items), Đồ Ăn Vặt (4 items), Đồ Uống (4 items). Each card: emoji icon, Vietnamese category name, English subtitle, description, item list with Vietnamese + English names.
-5. **Stats Strip** — 4 items: 🏮 20+ Menu Items (count-up), ⭐ 100% Authentic Recipes (count-up), 🛵 Fast Takeaway (static word), ❤️ Family Run Business (static word). Surface background, border top/bottom.
-6. **Contact (Liên Hệ)** — Two-column: left info (address, ordering note, location note) + Google Maps embed; right contact form (Name, Email, Message) with Vietnamese thank-you state on submit.
-7. **Footer** — Business name + tagline (Vietnamese + English) + address. Navigation links. Specialities list. No social icons (all social_links empty). Copyright © 2025 HẺM ĂN VẶT.
+1. **Nav** — Fixed top, transparent → blur + rgba(13,10,7,0.92) dark on scroll (scrollY > 50). Logo: `logo.png` (height: 50px). Links: Menu · About · Contact. Mobile: hamburger → full-screen overlay with large italic links.
+2. **Hero** — 100vh. `images/image1.webp` full-bleed background with dark overlay. H1: HẺM ĂN VẶT in Cormorant Garamond italic. Subtitle: "Authentic Vietnamese Street Food · Sunshine North". Two CTAs: "View Our Menu" + "Find Us". SVG wave divider.
+3. **About** — Dark warm surface. Two-column: left text (English description + 4 feature badges), right `images/image3.webp` with object-fit cover.
+4. **Menu** — 2×2 card grid on dark bg. Categories: Bánh Mì, Chè, Street Snacks, Drinks. Each card: emoji icon, category name, English subtitle, description, English item list.
+5. **Gallery** — 3-column CSS grid (2-col on tablet, 1-col on mobile). All 5 images with hover zoom + caption. Fifth image spans full row.
+6. **Stats Strip** — 4 items: 🏮 20+ Menu Items (count-up), ⭐ 100% Authentic Recipes (count-up), 🛵 Fast Takeaway (static), ❤️ Family Run (static).
+7. **Contact** — Two-column: left info (address, Uber Eats note, location note) + Google Maps embed; right contact form (Name, Email, Message) with English thank-you message on submit.
+8. **Footer** — `logo.png` (height: 60px), business name, English tagline, address. Quick links + specialities. Copyright © 2026 HẺM ĂN VẶT. No social icons.
 
 ## Required Features (all implemented)
 - Mobile-first, breakpoints: 480/768/1024/1280px
 - Scroll-reveal animations: `reveal` class + IntersectionObserver (threshold: 0.15), `.d1`–`.d4` delay classes (80ms steps)
 - Stats counter: `requestAnimationFrame` count-up from 0 to target, 1500ms, easeOutQuad, triggered by IntersectionObserver
-- Back-to-top button (fixed bottom-right, appears at scrollY > 300, 48px circle)
-- Scroll progress bar (fixed top, 3px, accent color)
+- Back-to-top button (fixed bottom-right, 48px circle, appears at scrollY > 300)
+- Scroll progress bar (fixed top, 3px, var(--accent))
 - DEMO watermark (fixed right side, rotated 90deg, opacity 0.09)
-- Mobile hamburger nav with full-screen overlay, closes on link click and ESC key
-- Contact form with fade-in Vietnamese thank-you state (no backend)
-- Google Maps embed with real address: 67 Berkshire Rd Sunshine North VIC 3020
+- Mobile hamburger nav with full-screen overlay; closes on link click and ESC key
+- Contact form with fade-in English thank-you state (no backend)
+- Google Maps embed: 67 Berkshire Rd Sunshine North VIC 3020
 - Nav blur + semi-transparent dark on scroll
 - Active nav link highlight on scroll
-- Lantern glow pulse animation (injected via JS)
 - No Font Awesome (all social_links empty — CDN omitted)
-- No broken image references — images/ is empty, no `<img src="images/...">` or `background-image: url(images/...)` anywhere
 
 ## Rules
 - Mobile-first, breakpoints: 480/768/1024/1280px
 - Scroll-reveal animations on all cards and headings (fade + slide-up, 80ms stagger)
-- Back-to-top button (fixed bottom-right, appears at 300px scroll)
+- Back-to-top button (fixed bottom-right, appears at scrollY > 300)
 - DEMO watermark (fixed right side, rotated, opacity 0.09)
 - No Lorem Ipsum — real business data only
 - No frameworks — pure HTML5/CSS3/vanilla JS
-- No external image references — images/ folder is empty
+- English only — no Vietnamese UI text

@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>HẺM ĂN VẶT — Vietnamese Street Food · Sunshine North, Melbourne</title>
-  <meta name="description" content="HẺM ĂN VẶT (Snack Alley) — Authentic Vietnamese street food and snacks in Sunshine North, Melbourne. Bánh mì, chè, bánh tráng trộn, đồ uống and more at 67 Berkshire Rd." />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HẺM ĂN VẶT — Authentic Vietnamese Street Food · Sunshine North, Melbourne</title>
+  <meta name="description" content="HẺM ĂN VẶT (Snack Alley) serves authentic Vietnamese street food in Sunshine North, Melbourne. Bánh mì, chè, rice paper snacks, bubble tea and more at 67 Berkshire Rd.">
 
-  <!-- Google Fonts: Cormorant Garamond + Be Vietnam Pro -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <!-- Google Fonts: Cormorant Garamond (display) + Be Vietnam Pro (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-  <!-- No Font Awesome — social_links all empty -->
-  <link rel="stylesheet" href="styles.css" />
+  <!-- No Font Awesome — all social_links are empty -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
@@ -23,22 +23,19 @@
   <div class="demo-watermark" aria-hidden="true">DEMO</div>
 
   <!-- Back to Top -->
-  <button id="back-to-top" aria-label="Back to top" title="Back to top">↑</button>
+  <button id="back-to-top" aria-label="Back to top" title="Back to top">&#8679;</button>
 
   <!-- ===================== NAV ===================== -->
   <nav id="navbar" role="navigation" aria-label="Main navigation">
     <div class="nav-inner">
       <a href="#hero" class="nav-logo" aria-label="HẺM ĂN VẶT — Go to top">
-        <span class="logo-lantern" aria-hidden="true">🏮</span>
-        <span class="logo-text">HẺM ĂN VẶT</span>
+        <img src="logo.png" alt="HẺM ĂN VẶT" class="logo-img">
       </a>
-
       <ul class="nav-links" role="list">
-        <li><a href="#menu" class="nav-link">Thực Đơn</a></li>
-        <li><a href="#about" class="nav-link">Về Chúng Tôi</a></li>
-        <li><a href="#contact" class="nav-link">Liên Hệ</a></li>
+        <li><a href="#menu" class="nav-link">Menu</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
-
       <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
         <span></span>
         <span></span>
@@ -48,58 +45,32 @@
 
     <!-- Mobile Full-Screen Overlay -->
     <div class="mobile-menu" id="mobile-menu" aria-hidden="true" role="dialog" aria-label="Navigation menu">
-      <button class="mobile-close" id="mobile-close" aria-label="Close menu">✕</button>
+      <button class="mobile-close" id="mobile-close" aria-label="Close menu">&times;</button>
       <ul role="list">
-        <li>
-          <a href="#menu" class="mobile-link">
-            Thực Đơn
-            <small>Menu</small>
-          </a>
-        </li>
-        <li>
-          <a href="#about" class="mobile-link">
-            Về Chúng Tôi
-            <small>About Us</small>
-          </a>
-        </li>
-        <li>
-          <a href="#contact" class="mobile-link">
-            Liên Hệ
-            <small>Contact</small>
-          </a>
-        </li>
+        <li><a href="#menu" class="mobile-link">Menu</a></li>
+        <li><a href="#about" class="mobile-link">About</a></li>
+        <li><a href="#contact" class="mobile-link">Contact</a></li>
       </ul>
       <p class="mobile-tagline">🏮 Sunshine North, Melbourne</p>
     </div>
   </nav>
 
   <!-- ===================== HERO ===================== -->
-  <!-- No images available — uses CSS gradient background only -->
   <section id="hero" class="hero">
-    <div class="hero-texture" aria-hidden="true"></div>
+    <div class="hero-bg" style="background-image: url('images/image1.webp');"></div>
+    <div class="hero-overlay"></div>
     <div class="hero-content">
       <p class="hero-eyebrow reveal">📍 Sunshine North, Melbourne</p>
-      <h1 class="hero-title reveal d1">HẺM<br /><em>ĂN VẶT</em></h1>
-      <p class="hero-subtitle reveal d2">Đồ Ăn Vặt Đường Phố <span class="dot-sep">·</span> Vietnamese Street Food</p>
-      <p class="hero-tagline reveal d3"><em>Hương vị hẻm nhỏ, ký ức lớn</em></p>
-      <p class="hero-tagline-en reveal d3">The taste of the alley, memories that last</p>
-      <div class="hero-ctas reveal d4">
-        <a href="#menu" class="btn btn-primary">
-          Xem Thực Đơn
-          <span class="btn-sub">View Menu</span>
-        </a>
-        <a href="#contact" class="btn btn-outline">
-          Tìm Chúng Tôi
-          <span class="btn-sub">Find Us</span>
-        </a>
+      <h1 class="hero-title reveal d1">HẺM ĂN VẶT</h1>
+      <p class="hero-subtitle reveal d2">Authentic Vietnamese Street Food · Sunshine North</p>
+      <div class="hero-ctas reveal d3">
+        <a href="#menu" class="btn btn-primary">View Our Menu</a>
+        <a href="#contact" class="btn btn-outline">Find Us</a>
       </div>
     </div>
-    <!-- Floating lantern decorations (CSS animated) -->
-    <span class="hero-lantern hero-lantern-1" aria-hidden="true">🏮</span>
-    <span class="hero-lantern hero-lantern-2" aria-hidden="true">🏮</span>
     <!-- SVG wave divider -->
     <svg class="hero-wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true">
-      <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="var(--bg)" />
+      <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="var(--bg)"/>
     </svg>
   </section>
 
@@ -110,13 +81,13 @@
 
         <!-- Left: text + badges -->
         <div class="about-text">
-          <p class="section-label reveal">Về Chúng Tôi · Our Story</p>
-          <h2 class="section-heading reveal d1">Hẻm Nhỏ,<br /><em>Hương Vị Lớn</em></h2>
+          <p class="section-label reveal">Our Story</p>
+          <h2 class="section-heading reveal d1">Snack Alley, <em>Reimagined</em></h2>
           <p class="about-lead reveal d2">
-            HẺM ĂN VẶT — meaning <em>Snack Alley</em> — brings the vibrant flavours of Vietnamese street food culture to the heart of Sunshine North.
+            HẺM ĂN VẶT — meaning <em>"Snack Alley"</em> — brings the vibrant flavours of Vietnamese street food culture to the heart of Sunshine North, Melbourne.
           </p>
           <p class="about-body reveal d3">
-            HẺM ĂN VẶT is a Vietnamese street food and snack restaurant located in Sunshine North, Melbourne. We bring the vibrant flavours of Vietnamese street food culture to the local community, serving a range of traditional Vietnamese snacks, casual dishes, and authentic street food favourites inspired by the laneways of Vietnam. From the crunch of freshly baked bánh mì to the sweet warmth of chè on a cool Melbourne evening — every dish is made with care, using time-honoured recipes passed down through generations.
+            We serve a range of traditional Vietnamese snacks, casual dishes, and authentic street food favourites inspired by the laneways of Vietnam. From the crunch of a freshly baked bánh mì roll to the sweet chill of chè on a warm afternoon — every dish is made fresh, daily, with genuine care and time-honoured recipes.
           </p>
           <div class="about-badges reveal d4">
             <span class="badge">🏮 Authentic Vietnamese</span>
@@ -126,28 +97,9 @@
           </div>
         </div>
 
-        <!-- Right: decorative quote card (no image available) -->
-        <div class="about-visual reveal d2">
-          <div class="about-quote-card">
-            <div class="about-quote-deco" aria-hidden="true">❝</div>
-            <blockquote class="about-quote-text">Hẻm nhỏ,<br /><em>hương vị lớn</em></blockquote>
-            <p class="about-quote-trans">Small alley, big flavours</p>
-            <svg class="about-quote-pattern" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <defs>
-                <pattern id="diamonds" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
-                  <path d="M10 0 L20 10 L10 20 L0 10 Z" fill="none" stroke="rgba(200,57,43,0.15)" stroke-width="0.8"/>
-                </pattern>
-              </defs>
-              <rect width="200" height="200" fill="url(#diamonds)"/>
-            </svg>
-            <div class="about-strip">
-              <span>🏮</span>
-              <span>Sunshine North</span>
-              <span aria-hidden="true">·</span>
-              <span>Melbourne</span>
-              <span>🏮</span>
-            </div>
-          </div>
+        <!-- Right: real business photo -->
+        <div class="about-image reveal d2">
+          <img src="images/image3.webp" alt="HẺM ĂN VẶT — Vietnamese street food in Sunshine North" loading="lazy">
         </div>
 
       </div>
@@ -157,10 +109,10 @@
   <!-- ===================== MENU ===================== -->
   <section id="menu" class="menu section-pad">
     <div class="container">
-      <div class="section-header reveal">
-        <p class="section-label" style="display:block; text-align:center;">Thực Đơn · Our Menu</p>
-        <h2 class="section-heading centered reveal d1">Khám Phá<br /><em>Hương Vị</em></h2>
-        <p class="section-subheading centered reveal d2">Món ăn đường phố chính gốc — Authentic Vietnamese street food</p>
+      <div class="section-header">
+        <p class="section-label reveal" style="display:block; text-align:center;">What We Serve</p>
+        <h2 class="section-heading centered reveal d1">Our Menu</h2>
+        <p class="section-subheading centered reveal d2">Fresh Vietnamese street food, made daily</p>
       </div>
 
       <div class="menu-grid">
@@ -169,15 +121,15 @@
         <div class="menu-card reveal d1">
           <div class="menu-card-icon" aria-hidden="true">🥖</div>
           <div class="menu-card-header">
-            <h3 class="menu-cat-vi">Bánh Mì</h3>
-            <p class="menu-cat-en">Vietnamese Bread Rolls</p>
+            <h3 class="menu-cat-name">Bánh Mì</h3>
+            <p class="menu-cat-sub">Vietnamese Bread Rolls</p>
           </div>
-          <p class="menu-card-desc">Crispy baguette, fluffy inside — filled with grilled meats, fresh herbs and pickled daikon. A Vietnamese classic, made fresh daily.</p>
+          <p class="menu-card-desc">Freshly baked rolls with your choice of fillings — a perfect on-the-go meal packed with authentic Vietnamese flavour.</p>
           <ul class="menu-items">
-            <li><span class="item-vi">Bánh Mì Thịt Nướng</span><span class="item-en">Grilled Pork</span></li>
-            <li><span class="item-vi">Bánh Mì Gà</span><span class="item-en">Chicken</span></li>
-            <li><span class="item-vi">Bánh Mì Chay</span><span class="item-en">Vegetarian</span></li>
-            <li><span class="item-vi">Bánh Mì Đặc Biệt</span><span class="item-en">Special House Roll</span></li>
+            <li>Grilled Pork</li>
+            <li>Chicken</li>
+            <li>Vegetarian</li>
+            <li>Special House Roll</li>
           </ul>
         </div>
 
@@ -185,53 +137,86 @@
         <div class="menu-card reveal d2">
           <div class="menu-card-icon" aria-hidden="true">🍮</div>
           <div class="menu-card-header">
-            <h3 class="menu-cat-vi">Chè</h3>
-            <p class="menu-cat-en">Vietnamese Sweet Desserts</p>
+            <h3 class="menu-cat-name">Chè</h3>
+            <p class="menu-cat-sub">Vietnamese Sweet Desserts</p>
           </div>
-          <p class="menu-card-desc">Traditional Vietnamese sweet soups and desserts — warm or cold, served with coconut cream, soft beans, and jelly toppings.</p>
+          <p class="menu-card-desc">Traditional chilled desserts and sweet soups — the perfect cooling treat on a warm Melbourne day.</p>
           <ul class="menu-items">
-            <li><span class="item-vi">Chè Ba Màu</span><span class="item-en">Three-Colour Dessert</span></li>
-            <li><span class="item-vi">Chè Chuối Nướng</span><span class="item-en">Grilled Banana</span></li>
-            <li><span class="item-vi">Chè Đậu Đỏ</span><span class="item-en">Red Bean Sweet Soup</span></li>
-            <li><span class="item-vi">Chè Khúc Bạch</span><span class="item-en">Almond Tofu Dessert</span></li>
+            <li>Three Colour Dessert</li>
+            <li>Banana Coconut</li>
+            <li>Red Bean Sweet Soup</li>
+            <li>Grass Jelly</li>
           </ul>
         </div>
 
-        <!-- Đồ Ăn Vặt -->
+        <!-- Street Snacks -->
         <div class="menu-card reveal d3">
           <div class="menu-card-icon" aria-hidden="true">🌮</div>
           <div class="menu-card-header">
-            <h3 class="menu-cat-vi">Đồ Ăn Vặt</h3>
-            <p class="menu-cat-en">Street Snacks</p>
+            <h3 class="menu-cat-name">Street Snacks</h3>
+            <p class="menu-cat-sub">Đồ Ăn Vặt</p>
           </div>
-          <p class="menu-card-desc">The heart of hẻm street culture — quick, bold, and addictive snacks that bring back memories of Saigon's alleyways.</p>
+          <p class="menu-card-desc">Authentic Vietnamese street bites — the kind of snacks you'd find in a bustling Saigon alley.</p>
           <ul class="menu-items">
-            <li><span class="item-vi">Bánh Tráng Trộn</span><span class="item-en">Rice Paper Salad</span></li>
-            <li><span class="item-vi">Bánh Tráng Nướng</span><span class="item-en">Grilled Rice Paper</span></li>
-            <li><span class="item-vi">Bắp Xào</span><span class="item-en">Stir-fried Corn</span></li>
-            <li><span class="item-vi">Hột Vịt Lộn</span><span class="item-en">Fertilised Duck Egg</span></li>
+            <li>Rice Paper Salad (Bánh Tráng Trộn)</li>
+            <li>Grilled Rice Paper (Bánh Tráng Nướng)</li>
+            <li>Corn Mix</li>
+            <li>Quail Eggs</li>
           </ul>
         </div>
 
-        <!-- Đồ Uống -->
+        <!-- Drinks -->
         <div class="menu-card reveal d4">
           <div class="menu-card-icon" aria-hidden="true">🧋</div>
           <div class="menu-card-header">
-            <h3 class="menu-cat-vi">Đồ Uống</h3>
-            <p class="menu-cat-en">Drinks</p>
+            <h3 class="menu-cat-name">Drinks</h3>
+            <p class="menu-cat-sub">Đồ Uống</p>
           </div>
-          <p class="menu-card-desc">Quench your thirst with refreshing Vietnamese beverages — from the iconic cà phê sữa đá to tropical fruit smoothies and bubble tea.</p>
+          <p class="menu-card-desc">Cold drinks to complete your meal — from creamy bubble tea to classic Vietnamese iced coffee.</p>
           <ul class="menu-items">
-            <li><span class="item-vi">Trà Sữa Trân Châu</span><span class="item-en">Bubble Milk Tea</span></li>
-            <li><span class="item-vi">Cà Phê Sữa Đá</span><span class="item-en">Iced Vietnamese Coffee</span></li>
-            <li><span class="item-vi">Nước Mía</span><span class="item-en">Sugarcane Juice</span></li>
-            <li><span class="item-vi">Sinh Tố Xoài</span><span class="item-en">Mango Smoothie</span></li>
+            <li>Bubble Tea</li>
+            <li>Iced Vietnamese Coffee</li>
+            <li>Sugar Cane Juice</li>
+            <li>Mango Smoothie</li>
           </ul>
         </div>
 
       </div>
 
       <p class="menu-note reveal">Menu items subject to daily availability. Come visit us or ask about today's specials!</p>
+    </div>
+  </section>
+
+  <!-- ===================== GALLERY ===================== -->
+  <section id="gallery" class="gallery section-pad">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label reveal" style="display:block; text-align:center;">Our Food &amp; Business</p>
+        <h2 class="section-heading centered reveal d1">Photo Gallery</h2>
+        <p class="section-subheading centered reveal d2">A taste of what's waiting at Snack Alley</p>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item reveal">
+          <img src="images/image1.webp" alt="Vietnamese street food at HẺM ĂN VẶT" loading="lazy">
+          <div class="gallery-caption">Vietnamese Street Food — Menu Item</div>
+        </div>
+        <div class="gallery-item reveal d1">
+          <img src="images/image2.webp" alt="Vietnamese food at HẺM ĂN VẶT" loading="lazy">
+          <div class="gallery-caption">Vietnamese Food — Made Fresh Daily</div>
+        </div>
+        <div class="gallery-item reveal d2">
+          <img src="images/image3.webp" alt="HẺM ĂN VẶT — Sunshine North" loading="lazy">
+          <div class="gallery-caption">HẺM ĂN VẶT — Sunshine North</div>
+        </div>
+        <div class="gallery-item reveal d3">
+          <img src="images/image4.webp" alt="HẺM ĂN VẶT business photo" loading="lazy">
+          <div class="gallery-caption">Our Kitchen — Made With Love</div>
+        </div>
+        <div class="gallery-item reveal d4">
+          <img src="images/image5.webp" alt="HẺM ĂN VẶT — Berkshire Rd Sunshine North" loading="lazy">
+          <div class="gallery-caption">67 Berkshire Rd, Sunshine North</div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -266,8 +251,9 @@
   <!-- ===================== CONTACT ===================== -->
   <section id="contact" class="contact section-pad">
     <div class="container">
-      <p class="section-label reveal" style="display:block; text-align:center;">Liên Hệ · Contact Us</p>
-      <h2 class="section-heading centered reveal d1">Tìm Chúng Tôi<br /><em>Find Us</em></h2>
+      <p class="section-label reveal" style="display:block; text-align:center;">Visit Us</p>
+      <h2 class="section-heading centered reveal d1">Find Us</h2>
+      <p class="section-subheading centered reveal d2">Come taste the alley — we'd love to see you</p>
 
       <div class="contact-grid">
 
@@ -276,22 +262,22 @@
           <div class="contact-detail">
             <span class="contact-icon" aria-hidden="true">📍</span>
             <div>
-              <strong>Địa Chỉ · Address</strong>
-              <p>67 Berkshire Rd<br />Sunshine North VIC 3020<br />Australia</p>
+              <strong>Address</strong>
+              <p>67 Berkshire Rd<br>Sunshine North VIC 3020<br>Australia</p>
             </div>
           </div>
           <div class="contact-detail">
             <span class="contact-icon" aria-hidden="true">🛵</span>
             <div>
-              <strong>Đặt Món · Order</strong>
-              <p>Available for takeaway direct from our kitchen. Walk-in and direct takeaway available.<br /><em>Note: Uber Eats listing is currently inactive as of April 2026.</em></p>
+              <strong>Delivery</strong>
+              <p>Also available on <strong>Uber Eats</strong>. Walk-in and direct takeaway welcome.</p>
             </div>
           </div>
           <div class="contact-detail">
             <span class="contact-icon" aria-hidden="true">🏮</span>
             <div>
-              <strong>Vị Trí · Location</strong>
-              <p>Located in the Berkshire Rd food strip alongside a vibrant selection of multicultural eateries in Sunshine North.</p>
+              <strong>Location</strong>
+              <p>Located in the Berkshire Rd food strip — a vibrant multicultural dining hub in Sunshine North.</p>
             </div>
           </div>
           <div class="map-wrap reveal d2">
@@ -307,32 +293,29 @@
         <!-- Right: contact form -->
         <div class="contact-form-wrap reveal d2">
           <div id="form-container">
-            <h3 class="form-title">Gửi Tin Nhắn <em>· Send a Message</em></h3>
+            <h3 class="form-title">Send a <em>Message</em></h3>
             <form id="contact-form" class="contact-form" novalidate>
               <div class="form-group">
-                <label for="f-name">Tên · Name</label>
-                <input type="text" id="f-name" name="name" placeholder="Nguyễn Văn A" required />
+                <label for="f-name">Name</label>
+                <input type="text" id="f-name" name="name" placeholder="Your name" required>
               </div>
               <div class="form-group">
                 <label for="f-email">Email</label>
-                <input type="email" id="f-email" name="email" placeholder="your.email@example.com" required />
+                <input type="email" id="f-email" name="email" placeholder="your.email@example.com" required>
               </div>
               <div class="form-group">
-                <label for="f-message">Tin Nhắn · Message</label>
-                <textarea id="f-message" name="message" rows="5" placeholder="Ask about our menu, opening hours, or anything else..." required></textarea>
+                <label for="f-message">Message</label>
+                <textarea id="f-message" name="message" rows="5" placeholder="Ask about our menu, hours, or anything else..." required></textarea>
               </div>
-              <button type="submit" class="btn btn-primary btn-full">
-                Gửi Tin Nhắn
-                <span class="btn-sub">Send Message</span>
-              </button>
+              <button type="submit" class="btn btn-primary btn-full">Send Message</button>
             </form>
           </div>
           <div id="thank-you" class="thank-you" aria-live="polite" hidden>
             <div class="thank-you-inner">
               <span class="thank-you-icon" aria-hidden="true">🏮</span>
-              <h3>Cảm ơn bạn rất nhiều!</h3>
-              <p>Thank you for your message. We'll get back to you soon.</p>
-              <p class="thank-you-sub"><em>Hẹn gặp lại bạn tại HẺM ĂN VẶT!</em></p>
+              <h3>Thank you!</h3>
+              <p>We've received your message and will get back to you soon.</p>
+              <p class="thank-you-sub">See you at the alley!</p>
             </div>
           </div>
         </div>
@@ -345,39 +328,38 @@
   <footer class="footer">
     <div class="footer-inner container">
       <div class="footer-brand">
-        <!-- No logo file — styled text only -->
-        <div class="footer-logo">
-          <span class="logo-lantern" aria-hidden="true">🏮</span>
-          <span class="logo-text">HẺM ĂN VẶT</span>
-        </div>
-        <p class="footer-tagline"><em>Hương vị hẻm nhỏ, ký ức lớn</em></p>
-        <p class="footer-tagline-en">The taste of the alley, memories that last</p>
+        <a href="#hero" class="footer-logo-link" aria-label="Back to top">
+          <img src="logo.png" alt="HẺM ĂN VẶT" class="footer-logo-img">
+        </a>
+        <p class="footer-name">HẺM ĂN VẶT</p>
+        <p class="footer-tagline">Authentic Vietnamese Street Food · Sunshine North, Melbourne</p>
         <p class="footer-address">📍 67 Berkshire Rd, Sunshine North VIC 3020</p>
       </div>
 
       <div class="footer-nav">
-        <h4>Điều Hướng · Navigation</h4>
+        <h4>Quick Links</h4>
         <ul>
-          <li><a href="#menu">Thực Đơn · Menu</a></li>
-          <li><a href="#about">Về Chúng Tôi · About</a></li>
-          <li><a href="#contact">Liên Hệ · Contact</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
 
       <div class="footer-specials">
-        <h4>Đặc Sản · Specialities</h4>
+        <h4>Our Specialities</h4>
         <ul>
-          <li>Bánh Mì Thịt Nướng</li>
-          <li>Bánh Tráng Trộn</li>
-          <li>Chè Ba Màu</li>
-          <li>Cà Phê Sữa Đá</li>
-          <li>Hột Vịt Lộn</li>
+          <li>Bánh Mì (Vietnamese Bread Rolls)</li>
+          <li>Bánh Tráng Trộn (Rice Paper Salad)</li>
+          <li>Chè (Sweet Desserts)</li>
+          <li>Iced Vietnamese Coffee</li>
+          <li>Bubble Tea</li>
         </ul>
       </div>
     </div>
 
     <div class="footer-bottom">
-      <p>© 2026 HẺM ĂN VẶT. All rights reserved. &nbsp;·&nbsp; Authentic Vietnamese Street Food · Sunshine North, Melbourne</p>
+      <p>&copy; 2026 HẺM ĂN VẶT. All rights reserved. &nbsp;&middot;&nbsp; Authentic Vietnamese Street Food &middot; Sunshine North, Melbourne</p>
     </div>
   </footer>
 

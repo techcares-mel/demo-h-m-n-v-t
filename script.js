@@ -2,7 +2,8 @@
 
 /* ============================================================
    HẺM ĂN VẶT — script.js
-   Vietnamese Street Food · Sunshine North, Melbourne
+   Authentic Vietnamese Street Food · Sunshine North, Melbourne
+   English-only rebuild
    ============================================================ */
 
 /* ---- DOM REFERENCES ---- */
@@ -17,7 +18,7 @@ const navLinks    = document.querySelectorAll('.nav-link');
 const sections    = document.querySelectorAll('section[id]');
 
 /* ============================================================
-   NAV — scroll behaviour (transparent → blur + dark)
+   NAV — transparent → blur + dark on scroll (scrollY > 50)
    ============================================================ */
 function handleNavScroll() {
   if (window.scrollY > 50) {
@@ -31,16 +32,17 @@ function handleNavScroll() {
    SCROLL PROGRESS BAR
    ============================================================ */
 function updateScrollProgress() {
-  const scrollTop  = window.scrollY;
-  const docHeight  = document.documentElement.scrollHeight - window.innerHeight;
-  const progress   = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
-  scrollBar.style.width = progress + '%';
+  const scrollTop = window.scrollY;
+  const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+  const progress  = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+  if (scrollBar) scrollBar.style.width = progress + '%';
 }
 
 /* ============================================================
-   BACK-TO-TOP BUTTON (shows at scrollY > 300)
+   BACK-TO-TOP BUTTON — shows when scrollY > 300
    ============================================================ */
 function handleBackToTop() {
+  if (!backToTop) return;
   if (window.scrollY > 300) {
     backToTop.classList.add('visible');
   } else {
@@ -48,12 +50,14 @@ function handleBackToTop() {
   }
 }
 
-backToTop.addEventListener('click', () => {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-});
+if (backToTop) {
+  backToTop.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+}
 
 /* ============================================================
-   ACTIVE NAV LINK — highlight on scroll
+   ACTIVE NAV LINK — highlight current section on scroll
    ============================================================ */
 function updateActiveNav() {
   const scrollPos = window.scrollY + 120;
@@ -88,7 +92,7 @@ function onScroll() {
 
 window.addEventListener('scroll', onScroll, { passive: true });
 
-// Set initial state on load
+// Set initial state immediately on load
 handleNavScroll();
 updateScrollProgress();
 handleBackToTop();
@@ -97,6 +101,7 @@ handleBackToTop();
    MOBILE MENU
    ============================================================ */
 function openMobileMenu() {
+  if (!mobileMenu || !hamburger) return;
   mobileMenu.classList.add('open');
   mobileMenu.setAttribute('aria-hidden', 'false');
   hamburger.classList.add('open');
@@ -106,6 +111,7 @@ function openMobileMenu() {
 }
 
 function closeMobileMenu() {
+  if (!mobileMenu || !hamburger) return;
   mobileMenu.classList.remove('open');
   mobileMenu.setAttribute('aria-hidden', 'true');
   hamburger.classList.remove('open');
@@ -114,17 +120,17 @@ function closeMobileMenu() {
   hamburger.focus();
 }
 
-hamburger.addEventListener('click', openMobileMenu);
+if (hamburger) hamburger.addEventListener('click', openMobileMenu);
 if (mobileClose) mobileClose.addEventListener('click', closeMobileMenu);
 
-// Close on link click
+// Close on nav link click
 mobileLinks.forEach(link => {
   link.addEventListener('click', closeMobileMenu);
 });
 
-// Close on Escape
+// Close on Escape key
 document.addEventListener('keydown', e => {
-  if (e.key === 'Escape' && mobileMenu.classList.contains('open')) {
+  if (e.key === 'Escape' && mobileMenu && mobileMenu.classList.contains('open')) {
     closeMobileMenu();
   }
 });
@@ -148,7 +154,7 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 
 /* ============================================================
    STATS COUNTER — count-up with requestAnimationFrame
-   easeOutQuad, 1500ms duration
+   easeOutQuad, 1500ms duration, triggered by IntersectionObserver
    ============================================================ */
 function easeOutQuad(t) {
   return t * (2 - t);
@@ -177,14 +183,13 @@ function animateCounter(el) {
   requestAnimationFrame(step);
 }
 
-// Observe stat counters — animate when scrolled into view
+// Observe stat number elements — animate when scrolled into view
 const statObserver = new IntersectionObserver(
   (entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        const el = entry.target;
-        animateCounter(el);
-        statObserver.unobserve(el);
+        animateCounter(entry.target);
+        statObserver.unobserve(entry.target);
       }
     });
   },
@@ -196,7 +201,7 @@ document.querySelectorAll('.stat-number[data-target]').forEach(el => {
 });
 
 /* ============================================================
-   SMOOTH SCROLL — offset for fixed nav
+   SMOOTH SCROLL — offset for fixed nav height
    ============================================================ */
 document.querySelectorAll('a[href^="#"]').forEach(link => {
   link.addEventListener('click', e => {
@@ -214,40 +219,43 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
 /* ============================================================
    CONTACT FORM — submit handler (no backend, pure JS)
    ============================================================ */
-const contactForm    = document.getElementById('contact-form');
-const thankYou       = document.getElementById('thank-you');
-const formContainer  = document.getElementById('form-container');
+const contactForm   = document.getElementById('contact-form');
+const thankYou      = document.getElementById('thank-you');
+const formContainer = document.getElementById('form-container');
 
 if (contactForm) {
   contactForm.addEventListener('submit', e => {
     e.preventDefault();
 
-    const name    = document.getElementById('f-name').value.trim();
-    const email   = document.getElementById('f-email').value.trim();
-    const message = document.getElementById('f-message').value.trim();
+    const name    = document.getElementById('f-name') ? document.getElementById('f-name').value.trim() : '';
+    const email   = document.getElementById('f-email') ? document.getElementById('f-email').value.trim() : '';
+    const message = document.getElementById('f-message') ? document.getElementById('f-message').value.trim() : '';
 
-    // Basic validation — shake the button if fields missing
+    // Basic validation — flash the submit button if fields are missing
     if (!name || !email || !message) {
       const btn = contactForm.querySelector('button[type="submit"]');
-      btn.style.transition = 'none';
-      btn.style.background = '#7f1d1d';
-      setTimeout(() => {
-        btn.style.transition = '';
-        btn.style.background = '';
-      }, 800);
+      if (btn) {
+        const orig = btn.style.background;
+        btn.style.transition = 'none';
+        btn.style.background = '#7a3d0a';
+        setTimeout(() => {
+          btn.style.transition = '';
+          btn.style.background = orig;
+        }, 800);
+      }
       return;
     }
 
-    // Fade out form, show thank-you message
+    // Fade out form, reveal English thank-you message
     if (formContainer) {
       formContainer.style.transition = 'opacity 0.4s ease';
       formContainer.style.opacity    = '0';
       setTimeout(() => {
         formContainer.style.display = 'none';
         if (thankYou) {
-          thankYou.hidden            = false;
-          thankYou.style.opacity     = '0';
-          thankYou.style.transition  = 'opacity 0.5s ease';
+          thankYou.hidden           = false;
+          thankYou.style.opacity    = '0';
+          thankYou.style.transition = 'opacity 0.5s ease';
           requestAnimationFrame(() => {
             requestAnimationFrame(() => {
               thankYou.style.opacity = '1';
@@ -260,24 +268,8 @@ if (contactForm) {
 }
 
 /* ============================================================
-   LANTERN GLOW — pulse animation on nav logo lantern emoji
-   Injected via JS to keep CSS clean (optional enhancement)
-   ============================================================ */
-const glowStyle = document.createElement('style');
-glowStyle.textContent = `
-  @keyframes lanternGlow {
-    0%, 100% { filter: drop-shadow(0 0 5px rgba(200, 57, 43, 0.5)); }
-    50%       { filter: drop-shadow(0 0 16px rgba(212, 168, 71, 0.9)); }
-  }
-  .logo-lantern {
-    animation: lanternGlow 3.5s ease-in-out infinite;
-    display: inline-block;
-  }
-`;
-document.head.appendChild(glowStyle);
-
-/* ============================================================
-   INIT — ensure already-visible reveals fire on slow networks
+   INIT — fire reveals for elements already in viewport
+   on slow connections / cached pages
    ============================================================ */
 (function init() {
   setTimeout(() => {

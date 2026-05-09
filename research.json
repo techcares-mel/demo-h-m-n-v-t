@@ -17,9 +17,40 @@
     "Takeaway"
   ],
   "logo_url": "",
-  "logo_note": "No logo found online. The business has very limited web presence and no logo image was discoverable via Google, Facebook, Instagram, or their Uber Eats listing.",
-  "image_urls": [],
-  "image_url_list": [],
+  "logo_note": "No logo found online — user manually provided logo.jpg which has been converted to logo.png.",
+  "image_urls": [
+    {
+      "url": "image1.webp",
+      "context": "food",
+      "description": "Menu item — Vietnamese food",
+      "source": "google_maps"
+    },
+    {
+      "url": "image2.webp",
+      "context": "food",
+      "description": "Menu item — Vietnamese food",
+      "source": "google_maps"
+    },
+    {
+      "url": "image3.webp",
+      "context": "other",
+      "description": "Business photo",
+      "source": "google_maps"
+    },
+    {
+      "url": "image4.webp",
+      "context": "other",
+      "description": "Business photo",
+      "source": "google_maps"
+    },
+    {
+      "url": "image5.webp",
+      "context": "other",
+      "description": "Business photo",
+      "source": "google_maps"
+    }
+  ],
+  "image_url_list": ["image1.webp", "image2.webp", "image3.webp", "image4.webp", "image5.webp"],
   "social_links": {
     "facebook": "",
     "instagram": "",
@@ -47,6 +78,20 @@
     "confirmed_address": "67 Berkshire Rd, Sunshine North VIC 3020 — confirmed via Uber Eats listing",
     "platform_status": "Uber Eats listing shows 'Closed on Uber Eats as of 5 Apr 2026'. Restaurant may still operate as dine-in or direct takeaway.",
     "image_search_note": "No real photos of this specific business were found on any platform (Google Maps, Facebook, Instagram, website). Wikipedia/Wikimedia images have been intentionally excluded per research rules — only real business photos are permitted. image_urls and image_url_list are empty; the design agent should use a CSS gradient fallback.",
-    "note": "Business has extremely limited online presence. No phone, email, social media, logo, or photo assets were discoverable across any platform searched. The address at 67 Berkshire Rd is a food court/commercial strip that also hosts VIDESHI (Indian), Coal Workshop (burgers), La Morenita Latin Cuisine, and Sunshine Kebab Curry among others. No dedicated Facebook, Instagram, TikTok, or website was found for the Sunshine North location specifically."
+    "note": "Business has extremely limited online presence. No phone, email, social media, logo, or photo assets were discoverable across any platform searched. The address at 67 Berkshire Rd is a food court/commercial strip that also hosts VIDESHI (Indian), Coal Workshop (burgers), La Morenita Latin Cuisine, and Sunshine Kebab Curry among others. No dedicated Facebook, Instagram, TikTok, or website was found for the Sunshine North location specifically.",
+    "photo_research_run_2026_05_08": {
+      "techniques_tried": [
+        "Technique 1 — Google web search Knowledge Panel: fetched https://www.google.com/search?q=H%E1%BA%BB%CC%A3M+%C4%82N+V%E1%BA%B7T+Sunshine+North&gl=au&hl=en — Google returned an access-blocked page with no HTML content, no lh3.googleusercontent.com URLs extracted",
+        "Technique 2 — Google Maps place URL: attempted https://www.google.com/maps/place/ with business coordinates — Google Maps returned only the text 'Google Maps' with no structured data or image URLs accessible via WebFetch",
+        "Technique 3 — Google Image Search: fetched https://www.google.com/search?q=Hem+An+Vat+67+Berkshire+Rd+Sunshine+North+VIC&tbm=isch&gl=au — Google blocked the request, no image URLs returned",
+        "Technique 4 — Direct lh3.googleusercontent.com site search: WebSearch for 'site:lh3.googleusercontent.com Hem An Vat Sunshine' returned zero results",
+        "Additional: Instagram popular/hashtag pages — returned images from unrelated Melbourne Vietnamese restaurants, not HẺM ĂN VẶT specifically",
+        "Additional: Uber Eats page — confirmed closed listing, no food photos available",
+        "Additional: Facebook search — no business page found for HẺM ĂN VẶT Sunshine North",
+        "Additional: ozfoodhunter.com, RestaurantGuru, Tripadvisor, AGFG, Yelp — no listing found for this specific restaurant"
+      ],
+      "outcome": "No lh3.googleusercontent.com URLs found. Google's anti-scraping measures prevented extraction of Knowledge Panel or Maps photo data. The business has no discoverable Facebook, Instagram, or website presence. image_urls and image_url_list remain empty arrays.",
+      "recommendation": "The website design should continue using CSS gradient fallbacks for hero and about sections. Consider re-attempting photo extraction using a headless browser with JavaScript rendering, or manually visiting the Google Maps listing for this address."
+    }
   }
 }

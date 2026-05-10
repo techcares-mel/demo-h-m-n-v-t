@@ -20,7 +20,7 @@
   --radius-lg:     20px;
   --max-width:     1280px;
   --section-pad:   clamp(4rem, 8vw, 8rem);
-  --nav-h:         72px;
+  --nav-h:         130px;
 
   --font-body:     'Be Vietnam Pro', system-ui, sans-serif;
   --font-display:  'Cormorant Garamond', Georgia, serif;
@@ -249,7 +249,7 @@ iframe { border: none; display: block; }
   text-decoration: none;
 }
 .logo-img {
-  height: 48px;
+  height: 120px;
   width: auto;
   object-fit: contain;
   display: block;
@@ -886,7 +886,7 @@ iframe { border: none; display: block; }
   padding-bottom: 3rem;
 }
 .footer-logo-link { display: inline-block; margin-bottom: 0.75rem; }
-.footer-logo-img { height: 64px; width: auto; object-fit: contain; }
+.footer-logo-img { height: 160px; width: auto; object-fit: contain; }
 .footer-name {
   font-family: var(--font-display);
   font-size: 1.3rem;

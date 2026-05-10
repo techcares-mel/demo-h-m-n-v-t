@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HẺM ĂN VẶT — Authentic Vietnamese Street Food · Sunshine North, Melbourne</title>
-  <meta name="description" content="HẺM ĂN VẶT (Snack Alley) serves authentic Vietnamese street food in Sunshine North, Melbourne. Bánh mì, chè, rice paper snacks, bubble tea and more at 67 Berkshire Rd.">
+  <meta name="description" content="HẺM ĂN VẶT (Snack Alley) serves authentic Vietnamese street food in Sunshine North, Melbourne. Bánh mì, chè, rice paper snacks and more at 67 Berkshire Rd.">
 
   <!-- Google Fonts: Cormorant Garamond (display) + Be Vietnam Pro (body) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,6 +36,7 @@
         <li><a href="#about" class="nav-link">About</a></li>
         <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
+      <a href="#contact" class="btn btn-nav-cta">Order Now</a>
       <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
         <span></span>
         <span></span>
@@ -55,23 +56,104 @@
     </div>
   </nav>
 
-  <!-- ===================== HERO ===================== -->
+  <!-- ===================== HERO — split layout ===================== -->
   <section id="hero" class="hero">
-    <div class="hero-bg" style="background-image: url('images/image1.webp');"></div>
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-      <p class="hero-eyebrow reveal">📍 Sunshine North, Melbourne</p>
-      <h1 class="hero-title reveal d1">HẺM ĂN VẶT</h1>
-      <p class="hero-subtitle reveal d2">Authentic Vietnamese Street Food · Sunshine North</p>
-      <div class="hero-ctas reveal d3">
-        <a href="#menu" class="btn btn-primary">View Our Menu</a>
-        <a href="#contact" class="btn btn-outline">Find Us</a>
+    <div class="container hero-container">
+
+      <!-- Left: text -->
+      <div class="hero-text">
+        <p class="hero-eyebrow reveal">📍 67 Berkshire Rd, Sunshine North</p>
+        <h1 class="hero-title reveal d1">Welcome to <em>Vietnamese</em> Food Heaven Where Flavour Meets Tradition</h1>
+        <p class="hero-subtitle reveal d2">Authentic street food and snacks inspired by the vibrant laneways of Vietnam — now in Sunshine North, Melbourne.</p>
+        <div class="hero-ctas reveal d3">
+          <a href="#menu" class="btn btn-primary">View Our Menu</a>
+          <a href="#contact" class="btn btn-outline">Find Us</a>
+        </div>
+      </div>
+
+      <!-- Right: photo -->
+      <div class="hero-image-wrap reveal d2">
+        <img src="images/image1.webp" alt="Authentic Vietnamese street food at HẺM ĂN VẶT" class="hero-img" loading="eager">
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== HOW IT WORKS ===================== -->
+  <section class="how-it-works section-pad">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label reveal" style="display:block; text-align:center;">Simple &amp; Fresh</p>
+        <h2 class="section-heading centered reveal d1">How It Works</h2>
+        <p class="section-subheading centered reveal d2">From our kitchen to your hands — quick, fresh and authentic</p>
+      </div>
+      <div class="hiw-grid">
+        <div class="hiw-card reveal d1">
+          <div class="hiw-img-wrap">
+            <img src="images/image1.webp" alt="Browse our menu" loading="lazy">
+          </div>
+          <div class="hiw-body">
+            <div class="hiw-step">01</div>
+            <h3>Browse Our Menu</h3>
+            <p>Explore Bánh Mì, Chè, street snacks and refreshing drinks — all made fresh daily.</p>
+          </div>
+        </div>
+        <div class="hiw-card reveal d2">
+          <div class="hiw-img-wrap">
+            <img src="images/image2.webp" alt="Place your order" loading="lazy">
+          </div>
+          <div class="hiw-body">
+            <div class="hiw-step">02</div>
+            <h3>Place Your Order</h3>
+            <p>Walk in or order via Uber Eats — quick, easy service with a smile every time.</p>
+          </div>
+        </div>
+        <div class="hiw-card reveal d3">
+          <div class="hiw-img-wrap">
+            <img src="images/image3.webp" alt="Freshly prepared" loading="lazy">
+          </div>
+          <div class="hiw-body">
+            <div class="hiw-step">03</div>
+            <h3>Freshly Prepared</h3>
+            <p>Every dish is made to order using time-honoured recipes and quality ingredients.</p>
+          </div>
+        </div>
+        <div class="hiw-card reveal d4">
+          <div class="hiw-img-wrap">
+            <img src="images/image4.webp" alt="Enjoy your food" loading="lazy">
+          </div>
+          <div class="hiw-body">
+            <div class="hiw-step">04</div>
+            <h3>Enjoy &amp; Savour</h3>
+            <p>Taste the flavours of Vietnam's street alleys right here in Sunshine North.</p>
+          </div>
+        </div>
       </div>
     </div>
-    <!-- SVG wave divider -->
-    <svg class="hero-wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true">
-      <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="var(--bg)"/>
-    </svg>
+  </section>
+
+  <!-- ===================== FEATURE STRIP (amber bg) ===================== -->
+  <section class="feature-strip section-pad">
+    <div class="container">
+      <div class="feature-grid">
+        <div class="feature-text reveal">
+          <p class="section-label">Our Story</p>
+          <h2 class="feature-heading">A Healthier Way<br>Has a Seat at <em>the Table</em></h2>
+          <p class="feature-desc">HẺM ĂN VẶT — meaning "Snack Alley" — brings the vibrant flavours of Vietnamese street food culture to the heart of Sunshine North. Every dish is prepared fresh, with genuine care and time-honoured recipes.</p>
+          <ul class="feature-list">
+            <li>🌿 Fresh ingredients, prepared daily</li>
+            <li>🏮 Traditional authentic Vietnamese recipes</li>
+            <li>❤️ Family owned and lovingly operated</li>
+            <li>🛵 Dine in, takeaway or Uber Eats</li>
+          </ul>
+          <a href="#contact" class="btn btn-dark reveal d2">Find Our Location</a>
+        </div>
+        <div class="feature-photos reveal d2">
+          <img src="images/image2.webp" alt="Vietnamese street food" class="feature-photo-1" loading="lazy">
+          <img src="images/image5.webp" alt="HẺM ĂN VẶT — Sunshine North" class="feature-photo-2" loading="lazy">
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- ===================== ABOUT ===================== -->
@@ -81,7 +163,7 @@
 
         <!-- Left: text + badges -->
         <div class="about-text">
-          <p class="section-label reveal">Our Story</p>
+          <p class="section-label reveal">Who We Are</p>
           <h2 class="section-heading reveal d1">Snack Alley, <em>Reimagined</em></h2>
           <p class="about-lead reveal d2">
             HẺM ĂN VẶT — meaning <em>"Snack Alley"</em> — brings the vibrant flavours of Vietnamese street food culture to the heart of Sunshine North, Melbourne.

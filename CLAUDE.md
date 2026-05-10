@@ -13,23 +13,23 @@
 - **ALL site text is in English only.** The brand name "HẺM ĂN VẶT" is retained as a proper noun. Dish names (Bánh Mì, Chè, Bánh Tráng Trộn, etc.) are used as widely-recognised Vietnamese food terms (like "sushi" or "tacos") with English descriptions alongside them.
 
 ## Design System
-- **Theme**: Dark — very dark warm black background, warm cream text, lantern-lit alley aesthetic
-- **Accent color**: `#d8882c` (warm amber — from colors.json)
-- **Accent hover**: `#de9a4c`
-- **Accent glow**: `rgba(216, 136, 44, 0.25)`
-- **Gold accent**: `#e0d69e` (from colors.json lightVibrant)
-- **Background**: `#0d0a07` (very dark warm black — custom, warmer than colors.json)
-- **Surface**: `#1a1208` (dark warm brown — About, Gallery, Contact, Footer sections)
-- **Card**: `#221a0e` (menu cards, contact form)
-- **Text**: `#f5e6d0` (warm cream)
-- **Text muted**: `#9c8a72` (warm tan)
-- **Border**: `rgba(216, 136, 44, 0.2)` (amber-tinted)
+- **Theme**: Light — warm cream background, dark warm text, clean modern food aesthetic
+- **Accent color**: `#c97e20` (deep amber — legible on cream)
+- **Accent hover**: `#a86818`
+- **Accent glow**: `rgba(201, 126, 32, 0.15)`
+- **Background**: `#fdf6ed` (warm cream)
+- **Surface**: `#f0e4cc` (warm beige — alternating sections)
+- **Card**: `#ffffff`
+- **Text**: `#1c1209` (near-black warm)
+- **Text muted**: `#7a6550`
+- **Border**: `rgba(28, 18, 9, 0.1)`
+- **Footer**: dark `#1c1209` background for contrast
 - **Heading font**: `Cormorant Garamond` (700, italic for display headings)
 - **Body font**: `Be Vietnam Pro` (400/500/600/700)
-- **Inspiration**: Late-night hẻm dining atmosphere — warm amber and gold accents, dark moody backgrounds, real business photos from Google Maps, inspired by Vietnamese street food alleyways.
+- **Inspiration**: Clean modern food website aesthetic — warm cream background, amber accents, split hero layout, horizontal "How It Works" cards, amber feature strip. Inspired by the design.webp reference.
 
 ## Assets
-- **Logo**: `logo.png` — present in business root. Displayed in nav (height: 50px) and footer (height: 60px).
+- **Logo**: `logo.png` — present in business root. Displayed in nav (height: 48px) and footer (height: 64px).
 - **images/**: 5 real business photos from Google Maps.
   - `image1.webp` — Vietnamese street food menu item (used as hero background)
   - `image2.webp` — Vietnamese food menu item (used in gallery)
@@ -40,14 +40,16 @@
 - **Hero background**: `images/image1.webp` with `rgba(0,0,0,0.58)` overlay
 
 ## Page Sections
-1. **Nav** — Fixed top, transparent → blur + rgba(13,10,7,0.92) dark on scroll (scrollY > 50). Logo: `logo.png` (height: 50px). Links: Menu · About · Contact. Mobile: hamburger → full-screen overlay with large italic links.
-2. **Hero** — 100vh. `images/image1.webp` full-bleed background with dark overlay. H1: HẺM ĂN VẶT in Cormorant Garamond italic. Subtitle: "Authentic Vietnamese Street Food · Sunshine North". Two CTAs: "View Our Menu" + "Find Us". SVG wave divider.
-3. **About** — Dark warm surface. Two-column: left text (English description + 4 feature badges), right `images/image3.webp` with object-fit cover.
-4. **Menu** — 2×2 card grid on dark bg. Categories: Bánh Mì, Chè, Street Snacks, Drinks. Each card: emoji icon, category name, English subtitle, description, English item list.
-5. **Gallery** — 3-column CSS grid (2-col on tablet, 1-col on mobile). All 5 images with hover zoom + caption. Fifth image spans full row.
-6. **Stats Strip** — 4 items: 🏮 20+ Menu Items (count-up), ⭐ 100% Authentic Recipes (count-up), 🛵 Fast Takeaway (static), ❤️ Family Run (static).
-7. **Contact** — Two-column: left info (address, Uber Eats note, location note) + Google Maps embed; right contact form (Name, Email, Message) with English thank-you message on submit.
-8. **Footer** — `logo.png` (height: 60px), business name, English tagline, address. Quick links + specialities. Copyright © 2026 HẺM ĂN VẶT. No social icons.
+1. **Nav** — Fixed top, transparent → cream blur rgba(253,246,237,0.96) on scroll (scrollY > 50). Logo: `logo.png` (height: 48px). Links: Menu · About · Contact. "Order Now" pill CTA (hidden mobile). Mobile: hamburger → full-screen cream overlay with large italic links.
+2. **Hero** — Split layout (text left, image right). No full-bleed bg. H1: "Welcome to Vietnamese Food Heaven…". Image: `images/image1.webp` in rounded card. Two CTAs: "View Our Menu" + "Find Us".
+3. **How It Works** — 4-column card grid on surface bg. Cards: image on top (4:3), step number in italic, title, description. Images: image1–image4.
+4. **Feature Strip** — Amber (`var(--accent)`) background. Left: story text + feature list + "Find Our Location" dark CTA. Right: 2-photo grid (image2 + image5).
+5. **About** — Light cream bg. Two-column: left text (description + 4 badges), right `images/image3.webp`.
+6. **Menu** — 2×2 card grid on surface bg. Categories: Bánh Mì, Chè, Street Snacks, Drinks.
+7. **Gallery** — 3-column grid on bg. All 5 images, hover captions. Fifth spans full row.
+8. **Stats Strip** — Surface bg. 4 items: 🏮 20+ Menu Items, ⭐ 100% Authentic Recipes, 🛵 Fast Takeaway, ❤️ Family Run.
+9. **Contact** — Light bg. Two-column: left info + map, right form.
+10. **Footer** — Dark `#1c1209` bg. `logo.png` (height: 64px), name, tagline, address. Quick links + specialities. Copyright © 2026 HẺM ĂN VẶT.
 
 ## Required Features (all implemented)
 - Mobile-first, breakpoints: 480/768/1024/1280px
@@ -71,3 +73,13 @@
 - No Lorem Ipsum — real business data only
 - No frameworks — pure HTML5/CSS3/vanilla JS
 - English only — no Vietnamese UI text
+
+## Redeployment
+After making changes, commit and redeploy from inside this folder:
+```bash
+git add -A
+git commit -m "describe your changes"
+git push
+vercel --prod --yes
+```
+The Vercel project is already linked (`.vercel/project.json`) — no token or scope flags needed.
